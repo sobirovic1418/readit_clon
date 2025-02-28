@@ -1,6 +1,6 @@
-from articles.views import index
+from articles.views import about
 from django.urls import path
 
 urlpatterns=[
-    path('',index)
+    path('',about)
 ]
