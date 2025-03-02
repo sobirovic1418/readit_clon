@@ -1,6 +1,7 @@
 from django.db import models
 
 class Hello(models.Model):
+    image = models.FileField(upload_to='about/')
     title=models.CharField(max_length=202)
     body=models.TextField()
 
@@ -16,6 +17,7 @@ class Articles(models.Model):
     data=models.TextField()
     title=models.CharField(max_length=202)
     description=models.TextField()
+    read=models.CharField(max_length=202)
 
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)

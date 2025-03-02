@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from .models import Team,Home
+from .models import Team,HappyClients
 
 def team(request):
     team=Team.objects.all()
-    home=Home.objects.all()
+    home=HappyClients.objects.all()
 
 
     ctx={
